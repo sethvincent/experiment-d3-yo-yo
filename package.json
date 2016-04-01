@@ -1,0 +1,24 @@
+{
+  "name": "yo-yo-sheetify-d3-experiments",
+  "version": "1.0.0",
+  "description": "Some experiments building ui components with yo-yo.js, d3, & sheetify.",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "browserify index.js -t sheetify/transform > bundle.js",
+    "start": "budo index.js:bundle.js --live -- -t sheetify/transform"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "d3-shape": "^0.6.0",
+    "insert-css": "^0.2.0",
+    "send-action": "^1.0.0",
+    "sheetify": "^5.0.0",
+    "xtend": "^4.0.1",
+    "yo-yo": "^1.1.1"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "budo": "^8.1.0"
+  }
+}
